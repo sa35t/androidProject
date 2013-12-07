@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    tools:context=".ProfileActivity" 
+    android:orientation="vertical">
+    
+    <LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <!-- View for name -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:text="@string/nameTextView"/>
+    <AutoCompleteTextView
+        android:id="@+id/editName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:hint="@string/nameHint"
+        />
+    
+       <!-- View for Email -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:text="@string/emailTextView"/>
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+         android:inputType="textEmailAddress"
+        android:hint="@string/emailHint"
+        />
+    
+      <!-- View for Phone Number -->
+	<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:text="@string/phoneTextView"/>
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="phone"
+        android:hint="@string/phoneHint"
+        />
+        
+    <!-- View for Radio Group -->
+	<TextView 
+	     
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:text="@string/genderTextView"/>
+    
+    <RadioGroup 
+        android:id="@+id/radioGenderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maleRadioButton"/>
+         <RadioButton 
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femaleRadioButton"/>    
+    </RadioGroup>
+  
+    <!-- View for Class -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:text="@string/classTextView"/>
+    <Spinner
+        android:id="@+id/editClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+    
+    <!-- View for Major -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:text="@string/majorTextView"/>
+    <AutoCompleteTextView
+        android:id="@+id/editMajor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:hint="@string/majorHint"
+        />
+    <RelativeLayout
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:layout_gravity="center">
+    <Button 
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/saveButton"
+        android:layout_margin="10dp"
+   		android:onClick="onSave" 
+      />     
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/save"
+        android:text="@string/cancelButton" 
+        android:onClick="onCancel"
+        android:layout_margin="10dp"/>
+    </RelativeLayout> 
+   </LinearLayout>
+  
+</ScrollView>
