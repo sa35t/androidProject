@@ -1,6 +1,8 @@
 package com.example.lab1;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
@@ -78,7 +80,22 @@ public class ProfileActivity extends Activity {
 	
 	public void onCancel(View view)
 	{
-		finish();
+		/* Alert Box on Cancel Button */
+		
+		 AlertDialog.Builder builder = new AlertDialog.Builder(ProfileActivity.this);
+	        builder.setMessage(R.string.cancel)
+	        .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int id) {
+	               finish();
+	            }
+	        })
+	        .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int id) {
+	              dialog.cancel();
+	            }
+	        });
+	        // Create the AlertDialog object and return it
+	       builder.show();   
 	}
 	
 	/* Load Profile which was Save Earlier */

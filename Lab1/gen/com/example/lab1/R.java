@@ -56,6 +56,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int cancel=0x7f050010;
         public static final int cancelButton=0x7f05000b;
         public static final int classTextView=0x7f050008;
         public static final int emailHint=0x7f05000d;
@@ -71,11 +72,13 @@ public final class R {
         /**  string used in Text View  
          */
         public static final int nameTextView=0x7f050002;
+        public static final int no=0x7f050012;
         public static final int phoneHint=0x7f05000e;
         public static final int phoneTextView=0x7f050004;
         /**  Name for Buttons 
          */
         public static final int saveButton=0x7f05000a;
+        public static final int yes=0x7f050011;
     }
     public static final class style {
         /** 

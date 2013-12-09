@@ -24,6 +24,10 @@
     <string name="phoneHint">Enter your Phone no.</string>
     <string name="majorHint">Your Major Here</string>
     
+    <string name="cancel">Do you want to Exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
     <!-- string array for candidate Names -->
     <string-array name="candidate">
         <item>Sandeep</item>
